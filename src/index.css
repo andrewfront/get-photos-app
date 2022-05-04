@@ -236,7 +236,7 @@ html,
 body {
   font-family: "Raleway", sans-serif;
   font-size: 40px;
-  height: 100%;
+  height: 100vh;
   font-weight: 400;
   background: -o-linear-gradient(342.97deg, #0F2027 3.27%, #203A43 42.3%, #2C5364 97.38%);
   background: linear-gradient(107.03deg, #0F2027 3.27%, #203A43 42.3%, #2C5364 97.38%);
@@ -381,7 +381,12 @@ body {
   margin-bottom: 10px;
 }
 .photos__item {
+  /* height: 349px; */
   max-width: 369px;
+  width: 100%;
+}
+.photos__sized {
+  height: 349px;
   width: 100%;
 }
 .photos__content {
@@ -434,6 +439,10 @@ body {
   padding: 10px 0px;
   background-color: #FFC0CB;
   color: #000000;
+  position: sticky;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 @media (max-width: 450px) {
